@@ -1,16 +1,9 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from week1.SelectionSort import *
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    usersInput = input("What's the value you want to multiple, divide or constantly add up to?: ")
+    usersInputAmountOfTimes = input("How many times do you want it to be divided, multiplied or added up to?: ")
+    constant_linear_kwadratisch_kubisch_logarithmisch(usersInput, usersInputAmountOfTimes)
+    recursive(int(usersInput), int(usersInputAmountOfTimes))
+    exponentialRecursive(int(usersInput), int(usersInputAmountOfTimes))
